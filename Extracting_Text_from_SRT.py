@@ -4,7 +4,6 @@ def Read_Srt(path):
     This Function reads Srt files and get rid of non text and writes into txt files.
     """
     for filename in glob.glob(os.path.join(path, '*.srt')):
-        x = filename
         Open_file = open(filename)
         read_f = Open_file.readlines()
         read_f = ''.join(read_f)
